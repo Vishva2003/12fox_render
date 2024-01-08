@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>12 𝓕𝓸𝔁</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="icon" href="static\assets\12fox.ico">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/contact.css')}}" media="all">
+    </head>
+    <body>
+
+      <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">12 𝓕𝓸𝔁</a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+        <div class="logout">
+            <a href="{{url_for('login')}}"><i class="ri-logout-box-line"></i></a>
+        </div>
+      </nav>
+
+
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Contact Us</h1>
+          <p> Where Trends Meet Timeless Elegance.</p>
+          
+        </div>
+      </div>
+
+
+      <section class="contact" id="contact">
+        <div class="max-width">
+          <div class="contact-content">
+            <div class="column left">
+              <div class="text">Get in Touch</div>
+              <p>Stay in the loop with the latest arrivals, exclusive promotions, and styling tips by following us on social media. Join our community of fashion enthusiasts who celebrate the beauty of self-expression through clothing.</p>
+              <div class="icons">
+      
+                  <div class="row">
+                    <i class="fa-solid fa-user-large"></i>
+                    <div class="info">
+                      <div class="head">Phone:</div>
+                      <div class="sub-title"><a href="#" style="text-decoration: none; color: #ffffffd7;"> +91 782592345</a></div>
+                    </div>
+                  </div>
+      
+                <div class="row">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="info">
+                    <div class="head">  Store Location:</div>
+                    <div class="sub-title">  No 165, 3rd Flr TS No 65/1,near HDFC, Eswari Nagar, Thanjavur, Tamil Nadu 613004</div>
+                  </div>
+                </div>
+      
+                <div class="row">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="info">
+                    <div class="head">Email:</div>
+                    <div class="sub-title"><a href="mailto:dev.vishvamv@gmail.com" style="text-decoration: none; color: #ffffffd7;"> groove.12fox@gmail.com</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Reach -->
+            <div class="column right">
+              <div class="text">Message me</div>
+              <p style="text-align:center;color:white">{{ msg }}</p>
+              <form action="/contact1" method="POST">
+                <div class="fields">
+                  <div class="field name">
+                    <input type="text" name="username" placeholder="Your Name" required>
+                  </div>
+                  <div class="field email">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="field">
+                  <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="field textarea">
+                  <textarea cols="30" name="message" rows="10" placeholder="Message.." required></textarea>
+                </div>
+                <div class="button-area">
+                  <button type="submit">Send message</button>
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>12Fox is more than a clothing store; we're curators of style, offering curated fashion that empowers individuals to express their unique identity with confidence..</p>
+            </div>
+            
+          </div>
+          <div class="middle box">
+            <div class="topic">Shopping &amp; Categories</div>
+            <div><a href="{{url_for('home')}}">Men’s Shopping</a></div>
+            <div><a href="{{url_for('home')}}">Women’s Shopping</a></div>
+            <div><a href="{{url_for('home')}}">kid’s Shopping</a></div>
+            <div><a href="{{url_for('home')}}">Latest Products</a></div>
+            
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="https://gmail.us21.list-manage.com/subscribe/post?u=e57daffa0ce944eba5a64a287&amp;id=3270c8cdc0&amp;f_id=0038f9e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" placeholder="Your Email Address..">
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+              <input type="hidden" name="_next" value="">
+              <div class="media-icons">
+                <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2023 <a href="#">12Fox</a> All rights reserved</p>
+        </div>
+      </footer>
+     
+
+    </body>
+    <script src="/static/js/nav.js"></script>
+</html>

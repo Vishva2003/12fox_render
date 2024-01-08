@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>12 𝓕𝓸𝔁</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="icon" href="static\assets\12fox.ico">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/loginreg.css')}}" media="all">
+    </head>
+    <body>
+
+      <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">12 𝓕𝓸𝔁</a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact Us</a></li>
+          
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+        <div class="logout">
+          <a href="{{url_for('login')}}"><i class="ri-logout-box-line"></i></a>
+        </div>
+      </nav>
+    
+
+    <div class="Login-box">
+		<h2>Login</h2>
+        <p style="text-align:center;color:white">{{ msg }}</p>
+		<form action="/login1" method="POST">
+			<div class="user-box">
+				<input type="text" name="username" id="" required="">
+				<label for="">Username</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="password" id="" required="">
+				<label for="">Password</label>
+			</div>
+			<button type="submit"  class="btn" value="SIGN IN">
+        sign in
+			</button>
+		</form>
+		
+    
+		<div class="login_signup">Don't have an account? <a href="{{ url_for('reg') }}" id="signup">Signup</a></div>
+      </div>
+    
+     
+      
+    </body>
+    <script src="/static/js/nav.js"></script>
+</html>
